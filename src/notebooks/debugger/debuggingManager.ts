@@ -157,7 +157,8 @@ export class DebuggingManager
             // add a property to the config to know if the session is runByLine
             __mode: mode,
             __cellIndex: cell.index,
-            __notebookUri: doc.uri.toString()
+            __notebookUri: doc.uri.toString(),
+            ... settings.debugExtraConfig
         };
         const opts: DebugSessionOptions | undefined =
             mode === KernelDebugMode.RunByLine

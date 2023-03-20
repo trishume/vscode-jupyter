@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type * as nbformat from '@jupyterlab/nbformat';
-import { ConfigurationTarget, Disposable, Event, Extension, ExtensionContext, OutputChannel, Uri, Range } from 'vscode';
+import { ConfigurationTarget, DebugConfiguration, Disposable, Event, Extension, ExtensionContext, OutputChannel, Uri, Range } from 'vscode';
 import { PythonEnvironment } from '../pythonEnvironments/info';
 import { CommandsWithoutArgs } from '../../commands';
 import { ICommandManager } from './application/types';
@@ -83,6 +83,7 @@ export interface IJupyterSettings {
     readonly addGotoCodeLenses: boolean;
     readonly runStartupCommands: string | string[];
     readonly debugJustMyCode: boolean;
+    readonly debugExtraConfig: Partial<DebugConfiguration>;
     readonly defaultCellMarker: string;
     readonly verboseLogging: boolean;
     readonly themeMatplotlibPlots: boolean;

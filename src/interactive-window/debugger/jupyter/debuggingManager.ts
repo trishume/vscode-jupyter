@@ -101,7 +101,8 @@ export class InteractiveWindowDebuggingManager
             __notebookUri: doc.uri.toString(),
             // add a property to the config to know if the session is runByLine
             __mode: KernelDebugMode.InteractiveWindow,
-            __cellIndex: cell.index
+            __cellIndex: cell.index,
+            ... settings.debugExtraConfig
         };
         const opts: DebugSessionOptions = { suppressSaveBeforeStart: true };
         await this.startDebuggingConfig(config, opts);

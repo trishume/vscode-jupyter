@@ -47,6 +47,7 @@ export function getDefaultSettings(): IJupyterExtraSettings {
         },
         runStartupCommands: '',
         debugJustMyCode: true,
+        debugExtraConfig: {},
         variableQueries: [],
         widgetScriptSources: []
     };

@@ -64,6 +64,7 @@ export function defaultDataScienceSettings(): IJupyterSettings {
         generateSVGPlots: false,
         runStartupCommands: '',
         debugJustMyCode: true,
+        debugExtraConfig: {},
         variableQueries: [],
         jupyterCommandLineArguments: [],
         widgetScriptSources: [],

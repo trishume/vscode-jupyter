@@ -1917,6 +1917,12 @@
                     "description": "%jupyter.configuration.jupyter.debugJustMyCode.description%",
                     "scope": "resource"
                 },
+                "jupyter.debugExtraConfig": {
+                    "type": "object",
+                    "default": {},
+                    "description": "%jupyter.configuration.jupyter.debugExtraConfig.description%",
+                    "scope": "resource"
+                },
                 "jupyter.showOutlineButtonInNotebookToolbar": {
                     "type": "boolean",
                     "default": true,

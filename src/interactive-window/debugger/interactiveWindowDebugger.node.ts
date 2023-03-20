@@ -65,7 +65,8 @@ export class InteractiveWindowDebugger implements IInteractiveWindowDebugger {
 
         return this.startDebugSession((c) => this.debugService.startDebugging(undefined, c), kernel, {
             justMyCode: settings.debugJustMyCode,
-            python: pythonPath
+            python: pythonPath,
+            ... settings.debugExtraConfig
         });
     }
 

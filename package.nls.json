@@ -260,6 +260,7 @@
         ]
     },
     "jupyter.configuration.jupyter.debugJustMyCode.description": "When debugging, only step through user-written code. Disable this to allow stepping into library code.",
+    "jupyter.configuration.jupyter.debugExtraConfig.description": "Extra keys for debugging configuration, like in a launch.json file.",
     "jupyter.configuration.jupyter.showOutlineButtonInNotebookToolbar.description": "Show the Outline button in the Jupyter notebook toolbar.",
     "jupyter.configuration.jupyter.newCellOnRunLast.description": "Append a new empty cell to an interactive window file on running the currently last cell.",
     "jupyter.configuration.jupyter.newCellOnRunLast.deprecationMessage": "This setting has been deprecated in favor of jupyter.interactiveWindow.textEditor.autoAddNewCell.",

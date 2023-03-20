@@ -4,6 +4,7 @@
 import {
     ConfigurationChangeEvent,
     ConfigurationTarget,
+    DebugConfiguration,
     Disposable,
     Event,
     EventEmitter,
@@ -74,6 +75,7 @@ export class JupyterSettings implements IWatchableJupyterSettings {
     public addGotoCodeLenses: boolean = false;
     public runStartupCommands: string | string[] = [];
     public debugJustMyCode: boolean = false;
+    public debugExtraConfig: Partial<DebugConfiguration> = {};
     public defaultCellMarker: string = '';
     public themeMatplotlibPlots: boolean = false;
     public variableQueries: IVariableQuery[] = [];

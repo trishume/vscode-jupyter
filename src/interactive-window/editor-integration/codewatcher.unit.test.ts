@@ -121,6 +121,7 @@ suite('Code Watcher Unit Tests', () => {
             generateSVGPlots: false,
             runStartupCommands: [],
             debugJustMyCode: true,
+            debugExtraConfig: {},
             variableQueries: [],
             widgetScriptSources: [],
             interactiveWindowMode: 'single',
